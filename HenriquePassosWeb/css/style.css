@@ -1,0 +1,263 @@
+#cssmenu {
+display:block !important;	
+}
+body{
+	margin:  0 auto;
+	padding: 0;
+	font: 100%
+}
+#hora{	
+	height:auto; 
+	width:80px; 
+	color:#FFF; 
+	background:#CCC;
+    cursor:url(../img/smiley.gif),url(myBall.cur),auto;
+	text-align:center;
+	font-family:Century;	
+}
+#topo{
+	float:left;
+	height:auto;
+	width:100%;
+}
+@font-face {
+	font-family:Century;
+	src:url(../fontes/GOTHIC.TTF);
+}
+h1{
+    font-family:Century;
+}
+p{
+	font-family:Century;
+}
+.white{
+	color:#FFF;
+	-webkit-transition-duration: .49s;
+}
+.white:hover{
+	color:#FFF;	
+	-webkit-transition-duration: .49s;
+	text-shadow: 0.1em 0.7em 0.1em;
+}
+.Frases{
+display:none !important;	
+}
+#Logo{
+	width:  200px;
+	height:	53px;	
+	margin-left: 10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#Conteudo{
+	float:left;
+	height:auto;
+	width:100%;
+}
+#Banner{
+	width:  100%;
+	height: 420px;
+	float: 	left;
+	position: relative;
+    background: url(../img/banner.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;	
+}
+#Faixa{
+	width:	100%;
+	height:	84px;
+	float:	left;
+	background:	#ff6600;
+}
+.fraseviva
+{
+	width:100%;
+	height:auto;
+	float:left;
+	background:#FFA500;
+	text-align:center;
+	color:white;
+	font-family:Century;
+}
+.BtnPosition{
+    height: 40px;
+    width:  60px;
+	margin-left: 49%;
+	margin-top: 2.3%;	
+	background: url(../img/seta_down.png) no-repeat !important;
+    font-size: 10px;
+	border:none;
+	-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;transition: all 0.4s linear;
+}
+.BtnPosition:hover{
+	-webkit-animation: smallToBig 200ms alternate infinite ease;-moz-animation: smallToBig 800ms alternate infinite ease;
+	background: url(../img/seta_down_branca.png) no-repeat !important;
+	cursor:pointer;
+}
+#InfoConteudo{
+	width:	100%;
+	height:	320px;
+	float:	left;
+}
+.Campo_Prod_End{
+	width:	100%;
+	background:#;
+	float:	left;
+}
+.Campo_Prod_Front{
+	width:	86.6%;
+	margin:	2.9%;
+	margin-left: 6.8%;
+	float:	left;		
+}	
+.ImgServico{
+	width: 33%;
+	min-height:	292px;
+	height: 100%;
+	float:	left;	
+	background-size: 100% 100%;
+	border:#FFF solid 1px;	
+}
+.ImgServico:hover { 
+	background-size: 105% 105%;
+	box-shadow: 0 0 20px #000000;
+	-moz-box-shadow: 0 0 20px #000000; 
+	-webkit-box-shadow: 0 0 20px #000000;
+	cursor:pointer;
+ }
+#FaixaPosition{
+	width:	100%;
+	height:	1px;
+	float:	left;
+}	
+.VoltarTopo {
+    bottom: 42px !important;
+	background: transparent url(../img/ScrollTop.png) no-repeat !important;
+    display: block;
+    height: 100px;
+	border:none;
+	border-image:none;
+    position: fixed;
+    right: 25px;
+    width:62px;
+	max-width:74px; margin:1px;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;transition: all 0.4s linear;
+}
+.VoltarTopo:hover{
+	-webkit-animation: smallToBig 300ms alternate infinite ease;-moz-animation: smallToBig 300ms alternate infinite ease;
+	cursor:pointer;
+}
+
+#ConteudoRodape{
+	height:	300px;
+	width:	100%;
+	margin-top:	4%;
+	float:	left;
+	background: #333;
+}
+#NewsLetter {
+	height: 96px;
+	width: 50%;
+	margin-top:2%;
+	float:  left;
+	margin-left: 6.8%;
+}
+#ConteudoRedesSociais {
+	height: 50px;
+	width: 45%;
+	margin-top:50px;
+	float:  left;
+	margin-left: 6.8%;
+}
+.RedesSociais {
+	height: 50px;
+	width: 50px;
+	float:  left;
+	cursor:pointer;
+	-webkit-animation: smallToBig 500ms alternate infinite ease;-moz-animation: smallToBig 800ms alternate infinite ease;
+}
+.RedesSociais:hover {
+	opacity:0.8;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=30);
+}
+#Assinatura{
+	height: 30px;
+	width: 50%;
+	float:  left;
+	margin-left: 6.8%;
+}
+.buttonnews{
+	height: 38px;
+	width: 50px;
+	border: none;
+	margin:0%;
+	color:#FFF;
+	background:#ff6600;
+	}
+.buttonnews:hover{
+	background: #000;
+	color: #ff6600;
+	font-weight: bold;
+	cursor:pointer;
+	}
+
+input[type=text],[type=password]{ 
+					  font-family:Century;
+					  font-size:15px;
+					  color:#4F4F4F;					  
+					  border-style:none;				
+					  height:35px;
+					  margin-top:5px;
+			  		  width:200px;
+					  padding-left:10px;
+					  padding-right:10px;
+				}
+textarea{ 
+					  font-family:Century;
+					  font-size:17px;
+					  color:#4F4F4F;
+					  border-style:none;
+					  height:100px;
+					  margin-top:5px;
+			  		  width:200px;
+					  padding-left:10px;
+					  padding-right:10px;
+				}
+.select{ 
+					  font-family:Century;
+					  font-size:17px;
+					  color:#4F4F4F;
+					  background:#CCC;
+					  border-style:none;
+					  height:100px;
+					  margin-top:5px;
+			  		  width:200px;
+					  padding-left:10px;
+					  padding-right:10px;
+				}
+[type=File]			 {font-family:Century;
+					  font-size:14px;
+					  color:#4F4F4F;
+					  background:#CCC;
+					  border-style:none;
+					  height:30px;
+					  margin-top:5px;
+			  		  width:270px;
+					  padding-left:10px;
+					  padding-right:10px;}
+#Rodape{
+	height:	42px;
+	width:	100%;
+	float:	left;
+	background: #282828;
+}
+.align {
+	height:auto;
+	width: 75%; 
+	margin-left: 22%;
+	float:left;
+}
+
+@-webkit-keyframes smallToBig{from {-webkit-transform: scale(1);}to {-webkit-transform: scale(1.1);}}
+
+@-moz-keyframes smallToBig{from {-moz-transform: scale(1);}to {-moz-transform: scale(1.1);}}
