@@ -12,7 +12,7 @@
     <script type="text/javascript" src="ddmenu/ddmenu.js"></script>     
     <script type="text/javascript" src="jquery_scroll/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="Positions/positions.js"></script>
-     <script type="text/javascript" src="saudacao.js"></script>
+    <script type="text/javascript" src="saudacao.js"></script>
       
 </head>
 
