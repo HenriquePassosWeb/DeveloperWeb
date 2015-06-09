@@ -81,7 +81,7 @@
 #ddmenu li a:hover{
 
     text-decoration:none;
-	 color:#FFF;
+    color:#FFF;
 	
 }
 
@@ -139,8 +139,7 @@
 	
 }
 
-#ddmenu li.over .dropdown
-{
+#ddmenu li.over .dropdown{
     display:block;	
 }
 
@@ -158,8 +157,7 @@
 /* links in sub menu
 ----------------------------*/
 
-#ddmenu .dropdown a
-{ 
+#ddmenu .dropdown a{ 
     display:table-row;
     *display:block;
     color:#333;
@@ -169,8 +167,7 @@
     padding:0;
 }
 
-#ddmenu .dropdown a:hover, #ddmenu .dropdown a:focus
-{
+#ddmenu .dropdown a:hover, #ddmenu .dropdown a:focus{
     text-decoration:underline;
     color:#F90;
 	transition:color 0.4s;
@@ -179,8 +176,7 @@
 
 /* blocks within the sub-menu
 -----------------------------*/
-#ddmenu div.column
-{
+#ddmenu div.column {
     text-align:left;
     vertical-align:top;/*or middle*/
     display:inline-block;
@@ -191,8 +187,7 @@
 	border-right:1px solid #999;
 }
 
-#ddmenu div.dd-inner div:last-child
-{
+#ddmenu div.dd-inner div:last-child {
     border-right:none;
 }
 
@@ -203,14 +198,17 @@
     font-size: 24px;
 }
 
-#ddmenu div.column h3 {text-transform:uppercase;}
+#ddmenu div.column h3 {
+	text-transform:uppercase;
+}
 
 /* useful when http://www.menucool.com/ddmenu/one-menu-for-all-pages */
-#ddmenuLink {display:none;}
+#ddmenuLink {
+	display:none;
+	}
 
 /*######## add additional styles for mobile-friendly responsive menu ########*/
 
-#ddmenu div.menu-icon   
-{
+#ddmenu div.menu-icon {
     display:none; /* hide menu icon initially */
 }

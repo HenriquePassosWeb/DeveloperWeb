@@ -13,14 +13,11 @@
       
    		 </form>
     </div>     
-	<div id="ConteudoRedesSociais">
+	  <div id="ConteudoRedesSociais">
     		<div class="RedesSociais"><img src="img/orange_face.png"/></div>
-    		<div class="RedesSociais"><img src="img/orange_twitter.png"/></div>  
-                  
-        </div>         
-   	            
-    </div>
-    
+    		<div class="RedesSociais"><img src="img/orange_twitter.png"/></div>                    
+      </div>            	            
+   </div>
 </div>
         
     <div id="Rodape"> <p style="text-align:center; color:#FFF; font-size: 1.01em;"> ©Copyright 2015-2015 ESCTECX Brasil Móveis S.A.- All Rights Reserved</div>
