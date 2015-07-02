@@ -21,6 +21,10 @@ switch ( $_GET ["pagina"] ) {
 	case'valores';
 	include "valores.php";
 	break;
+	
+	case 'produtos';
+	include "produtos.php";
+	break;
 		
 	case 'mesa';
 	include "mesa.php";
@@ -40,6 +44,10 @@ switch ( $_GET ["pagina"] ) {
 	
 	case 'contato';
 	include "contato.php";
+	break;
+	
+	case 'adm';
+	include "adm/produtos/form_prod.php";
 	break;
 	
 	default:
