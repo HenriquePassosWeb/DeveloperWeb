@@ -36,6 +36,9 @@
                     	<div class="column">                        
                         	<a href="index.php?pagina=valores">VALORES</a>
                     	</div>
+                        <div class="column">                        
+                        	<a href="index.php?pagina=produtos">PRODUTOS</a>
+                    	</div>
                 	 </div>                
              	 </div>
           	</li> 
@@ -69,6 +72,10 @@
         
         	<li class="no-sub">
            		 <a class="top-heading" href="index.php?pagina=contato">CONTATO</a>
+       	    </li>
+            
+            <li class="no-sub">
+           		 <a class="top-heading" href="index.php?pagina=adm">ADM</a>
        	    </li>
             
     </ul>
