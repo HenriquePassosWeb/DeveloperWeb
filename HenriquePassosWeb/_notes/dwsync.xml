@@ -4,7 +4,6 @@
 <file name="index.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130775913658685788" remote="130775913650000000" Dst="1" />
 <file name="conteudo.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130773333179670371" remote="130773333170000000" Dst="1" />
 <file name="home.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130764767136661059" remote="130764767130000000" Dst="1" />
-<file name="moveisplanejados.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130762766939084438" remote="130762766930000000" Dst="1" />
 <file name="rodape.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130775923982186258" remote="130775923980000000" Dst="1" />
 <file name="topo.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130775913741970551" remote="130775913740000000" Dst="1" />
 <file name="visao.php" server="C:/wamp/www/ESCTECXBrasilMoveisSA/" local="130775921073219875" remote="130775921070000000" Dst="1" />
@@ -21,7 +20,6 @@
 <file name="rodape.php" server="C:/wamp/www/HenriquePassosWeb/" local="130783577989883619" remote="130783577980000000" Dst="1" />
 <file name="mesa.php" server="henriquepassosweb.besaba.com" local="130774965145048323" remote="130784638200000000" Dst="1" />
 <file name="missao.php" server="henriquepassosweb.besaba.com" local="130775920260073366" remote="130784638200000000" Dst="1" />
-<file name="moveisplanejados.php" server="henriquepassosweb.besaba.com" local="130762766939084438" remote="130784638200000000" Dst="1" />
 <file name="cadeira.php" server="31.170.165.100//public_html/" local="130775664227986152" remote="130785424800000000" Dst="1" />
 <file name="contato.php" server="31.170.165.100//public_html/" local="130774744857618608" remote="130785424800000000" Dst="1" />
 <file name="conteudo.php" server="31.170.165.100//public_html/" local="130773333179670371" remote="130785424800000000" Dst="1" />
@@ -31,9 +29,12 @@
 <file name="pedido.php" server="henriquepassosweb.esy.es//public_html/" local="130775684812363511" remote="130786923600000000" Dst="1" />
 <file name="rodape.php" server="henriquepassosweb.esy.es//public_html/" local="130783582027384551" remote="130786923600000000" Dst="1" />
 <file name="saudacao.js" server="henriquepassosweb.esy.es//public_html/" local="130775832857528542" remote="130786923600000000" Dst="1" />
-<file name="topo.php" server="henriquepassosweb.esy.es//public_html/" local="130783582027394551" remote="130786923600000000" Dst="1" />
+<file name="topo.php" server="henriquepassosweb.esy.es//public_html/" local="130793797568430715" remote="130793904600000000" Dst="1" />
 <file name="valores.php" server="henriquepassosweb.esy.es//public_html/" local="130775921287282119" remote="130786923600000000" Dst="1" />
 <file name="mesa.php" server="henriquepassosweb.esy.es//public_html/" local="130774965145048323" remote="130786924200000000" Dst="1" />
 <file name="missao.php" server="henriquepassosweb.esy.es//public_html/" local="130775920260073366" remote="130786924200000000" Dst="1" />
 <file name="diversos.php" server="henriquepassosweb.esy.es//public_html/" local="130775753257336630" remote="130786934400000000" Dst="1" />
+<file name="produtos.php" server="henriquepassosweb.esy.es//public_html/" local="130793964797115648" remote="130794072000000000" Dst="1" />
+<file name="conteudo.php" server="henriquepassosweb.esy.es//public_html/" local="130793954976593947" remote="130794061800000000" Dst="1" />
+<file name="index.php" server="henriquepassosweb.esy.es//public_html/" local="130783582027374550" remote="130794099600000000" Dst="1" />
 </dwsync>
