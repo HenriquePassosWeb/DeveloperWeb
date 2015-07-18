@@ -1,5 +1,4 @@
 <?PHP
-
 require_once('../conexao.php');
 
 $descricao = $_POST['txt_descricao'];
@@ -40,8 +39,15 @@ $categoria = $_POST['txt_categoria'];
 	        // Não houveram erros, move o arquivo
 	        } else {
 	            $pasta = 'fotos/';
+				
 	            // Pega a extensão do arquivo enviado
-	            $extensao = strtolower(end(explode('.', $arqName)));
+	            // Este código foi substituido pelo de baixo 
+				//$extensao = strtolower(end(explode('.', $arqName)));
+				
+				// Pega a extensão do arquivo enviado		
+				$tmp = explode('.', $arqName);
+   				 $extensao = end($tmp);
+				 
 	            // Define o novo nome do arquivo usando um UNIX TIMESTAMP
 	            $nome = time() . '.' . $extensao;
 				
@@ -75,13 +81,11 @@ $categoria = $_POST['txt_categoria'];
 									   '$categoria'
 									 )";
 	                // Executa a consulta
-	               $query = mysql_query($sql);
-				 
-
-	 
+	               $query = mysqli_query($link, $sql);
+				 	 
 	                if ($query == true) {
 	                    echo 'Produto inserido com sucesso!';
-						header("Location:form_prod.php");
+						//header("Location:form_prod.php");
 						
 			
 	                }
