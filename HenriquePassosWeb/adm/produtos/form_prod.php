@@ -1,10 +1,18 @@
 <?php
-require_once('../conexao.php');
+	//configura conexao com bando de dados
+	$link = mysqli_connect("mysql.hostinger.com.br","u185870019_henri","henri120","u185870019_dev01"); 
 
-$sql2= "select * from tb_categoria";
-$sql2= mysql_query($sql2) or die ("Erro na sql_2");
-$total2= mysql_num_rows($sql2);
+	//Query do database para traser o resultado que queremos
+	$query = $link->query("select * from tb_categoria");
+
+	//Cria vetor para retornar objetos de cada linha
+	while($array[] = $query->fetch_object());
+	
+	//Remova a entrada vazia/branca no final do vetor
+	array_pop($array);
+
 ?>
+
 
 <!doctype html>
 <html>
@@ -26,14 +34,13 @@ Body {
 	width:100%;
 	height:90px;
 	float:left;
-      background-color:#006;
+    background-color:#006;
 }
 #logo {	
 	width:150px;
 	height:90px;
 	margin-left:50px;
 	margin-top:5px;
-    background-image:url(LogoADM.png);
     background-repeat: no-repeat;
 }
 #conteudo{
@@ -170,25 +177,30 @@ body,td,th {
 </div>
 
 <div class="Campos">
-<label style="font-family:Century;"> Marcas </label>
+<label style="font-family:Century;"> Categoria </label>
 <br>
-<select name="txt_marca">
-  <?php for ($i=0; $i < $total; $i++) { ?> 
-    <option value="<?php echo mysql_result($sql, $i, 'codmarca'); ?>"> 
-	  <?php echo mysql_result($sql, $i, 'descricaomarca'); ?>
-    </option>
-  <?php } ?>
+<select name="txt_categoria">
+
+<?php foreach($array as $option) : ?>
+	<option value="<?php echo $option->codcategoria; ?>">
+	<?php echo $option->descricaocategoria; ?></option>
+    
+    <?php endforeach;?>    
 </select>
+
 </div>
 
 <div class="Campos">
-<label style="font-family:Century;"> Categoria </label> <br>
-<select name="txt_categoria">
+<label style="font-family:Century;"> Marca </label> <br>
+<select name="txt_marca">
+
   <?php for ($i=0; $i < $total2; $i++) { ?> 
-    <option value="<?php echo mysql_result($sql2, $i, 'codcategoria'); ?>"> 
-	  <?php echo mysql_result($sql2, $i, 'descricaocategoria'); ?>
+    <option value="<?php echo mysqli_fetch_field_direct($link, $sql2, $i, 'codmarca'); ?>"> 
+	  <?php echo mysqli_fetch_field_direct($link, $sql2, $i, 'descricaomarca'); ?>
     </option>
   <?php } ?>
+  
+  
 </select>
 </div>
 

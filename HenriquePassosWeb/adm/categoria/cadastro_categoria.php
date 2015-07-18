@@ -14,7 +14,7 @@ $categoria = $_POST['txt_categoria'];
 									   '$categoria'
 									 )";
 	                // Executa a consulta
-	               $query = mysql_query($sql);
+	               $query = mysqli_query($link, $sql);
 				 
 	                if ($query == true) {
 	                    echo 'Categoria inserido com sucesso!';
