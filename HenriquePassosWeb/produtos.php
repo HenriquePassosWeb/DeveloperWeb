@@ -4,11 +4,14 @@ require_once('adm/conexao.php');
 if (empty($_REQUEST['txt_categoria']))$_REQUEST['txt_categoria']= null;
 $categoria = $_REQUEST['txt_categoria'];
 
-$sql = "select * from tb_produtos where codcategoria='1'";
+$sql2 = "select * from tb_categoria";
+$sql2 = mysqli_query($link,$sql2) or die ("ERRO AO CONSULTAR");
+$total2 = mysqli_num_rows($sql2);
 
+$sql = "select * from tb_produtos where codcategoria ='1'";
 $sql = mysqli_query($link,$sql) or die ("ERRO AO CONSULTAR");
-
 $total = mysqli_num_rows($sql);
+
 echo "Numero de registros: ".$total;
 ?>
 
@@ -70,48 +73,44 @@ div.active, div.activeFade {
         
 <body>
 
-<div id="Principal">
-<div class="ConteudoProd">
+<div id="Principal">+
+ <div class="ConteudoProd">
 
     <form action="produtos.php" method="get" name="pesquisa">
-
       <div id="Alinhar" style="float:left; height:30px; width:390px;">    
         <label style="float:left;"> <p5>Produto:</p5> </label>
         <select name="txt_categoria" style="width:160px; float:left; margin-left:5px;" >
         
-          <?php for ($i=0; $i < $total; $i++) { ?> 
-            <option value="<?php echo mysql_result($sql, $i, 'codcategoria'); ?>"/> 
-              <?php echo mysql_result($sql, $i, 'descricaocategoria'); ?>
+          <?php for ($i=0; $i < $total2; $i++) { ?> 
+            <option value="<?php echo mysql_result($sql2, $i, 'codcategoria'); ?>"/> 
+              <?php echo mysql_result($sql2, $i, 'descricaocategoria'); ?>
             </option>
           <?php } ?>
           
         </select>
        <input name="Procurar" type="submit" value="Buscar" style="height:30px; margin-left:25px; width:90px;">
       </div>
-   </form>
-      
-     </div>
-     <div class="Produto">
-     
-   <?php for ($i=0; $i < $total; $i++) { ?> 
+   </form>      
+ 
+	<div class="Produto">     
+  	 <?php for ($i=0; $i < $total; $i++) { ?> 
    	  <div class="Produtos lg">
-  	   <div class="ImgProd">  <img style="display: block; margin-left: auto; margin-right: auto" height="210px" width="250px" src="adm/produtos/<?php echo mysql_result($sql, $i, 'foto');?>">  </div>
-       <div class="DescriProd"><p style= "font:'Century Gothic';font-size:15px;color:#000;"><?php echo mysql_result($sql, $i, 'descricaoprod');?></p> </div>
-       <div class="Preco"> <?php echo mysql_result($sql, $i, 'preco');?> <p2> á Vista </p2> </div>
+  	   <div class="ImgProd">
+       		
+            <img style="height="210px" width="250px" src="adm/produtos/fotos/<?php echo mysql_result($sql, $i, 'foto');?>"></div>            
+            <div class="DescriProd"><p><?php echo mysql_result($sql, $i, 'descricaoprod');?></p></div>       
+            
+            <div class="Preco"><?php echo mysql_result($sql, $i, 'preco');?> <p2> á Vista </p2> </div>            
+       		
+            <div class="btnDetalhe"><a href="pedidos.php?pro_parametro=<?php echo mysql_result($sql, $i, 'codprod');?> ">       		
+            <p>Faça seu Pedido</p></a>       
        
-     
-       <div class="btnDetalhe"> <a href="pedidos.php?pro_parametro=<?php echo mysql_result($sql, $i, 'codprod');?> ">  
-       		<p>Faça seu Pedido </p> 
-       </a>
-       </div>
-          
-                  
+       </div>                           
       </div>
-      <?php }?>
-      
+     <?php }?>    
    </div>
-  </div>   
- </div>
+     
+ </div> 
 </div><!--Principal-->
 
 </body>
